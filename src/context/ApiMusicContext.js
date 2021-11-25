@@ -14,8 +14,8 @@ const MusicContextProvider = (props) => {
       )
 
       .then((res) => res.data)
-      .then((dataQueenn) => {
-        setDataQueen(dataQueenn);
+      .then((dataQueen) => {
+        setDataQueen(dataQueen);
       });
   }, []);
 
