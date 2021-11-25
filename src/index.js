@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import MusicContextProvider from "./containers/context/ApiMusicContext";
+import MusicContextProvider from "./context/ApiMusicContext";
 
 ReactDOM.render(
   <React.StrictMode>
