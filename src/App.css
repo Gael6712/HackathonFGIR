@@ -4,8 +4,8 @@
 
 body,
 #root {
-  background-color: #34495e;
-  color: #fff;
+  background-color: #fff;
+  color: #111;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ h1 {
 
 .figure-container {
   fill: transparent;
-  stroke: #fff;
+  stroke: #111;
   stroke-width: 4px;
   stroke-linecap: round;
 }
@@ -67,7 +67,7 @@ h1 {
 }
 
 .letter {
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid #666;
   display: inline-flex;
   font-size: 30px;
   align-items: center;
@@ -91,7 +91,7 @@ h1 {
 }
 
 .popup {
-  background: #2980b9;
+  background: #666;
   border-radius: 5px;
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -101,7 +101,7 @@ h1 {
 .popup button {
   cursor: pointer;
   background-color: #fff;
-  color: #2980b9;
+  color: #111;
   border: 0;
   margin-top: 20px;
   padding: 12px 20px;
@@ -155,5 +155,10 @@ audio::-webkit-media-controls-current-time-display {
   display: none;
 }
 audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+
+.audio-display {
   display: none;
 }
