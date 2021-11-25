@@ -27,7 +27,6 @@ const MusicContextProvider = (props) => {
       .get(
         "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/7868651"
       )
-
       .then((res) => res.data)
       .then((dataOrel) => {
         setDataOrel(dataOrel);

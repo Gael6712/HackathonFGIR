@@ -7,9 +7,12 @@ export default function PlayersQueen() {
   console.log(playQueen);
   return (
     <>
-      <avideo autoPlay controls muted>
-        <source src={playQueen} type="audio/mp3" />
-      </avideo>
+      <figure>
+        <audio controls src={playQueen}>
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </figure>
     </>
   );
 }

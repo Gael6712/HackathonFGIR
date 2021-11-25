@@ -6,9 +6,12 @@ export default function PlayersOrel() {
   console.log(playOrel);
   return (
     <>
-      <video autoPlay controls muted>
-        <source src={playOrel} type="audio/mp3" />
-      </video>
+      <figure>
+        <audio controls src={playOrel}>
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </figure>
     </>
   );
 }

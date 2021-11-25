@@ -7,9 +7,12 @@ export default function PlayersEminem() {
   console.log(playEminem);
   return (
     <>
-      <video autoPlay controls muted>
-        <source src={playEminem} type="audio/mp3" />
-      </video>
+      <figure>
+        <audio controls src={playEminem}>
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </figure>
     </>
   );
 }
