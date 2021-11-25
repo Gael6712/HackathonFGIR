@@ -8,7 +8,7 @@ const MusicContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/75621062"
+        "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/3155488"
       )
 
       .then((res) => res.data)
@@ -16,7 +16,7 @@ const MusicContextProvider = (props) => {
         setData(data);
       });
   }, []);
-  console.log(data.tracks[0]);
+  
   return (
     <ApiMusicContext.Provider value={{ data: data, setData: setData }}>
       {props.children}
