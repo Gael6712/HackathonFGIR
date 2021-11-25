@@ -18,7 +18,10 @@ body,
 h1 {
   margin: 20px 0 0;
 }
-
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
 .game-container {
   padding: 20px 30px;
   position: relative;
@@ -138,7 +141,7 @@ audio {
 }
 
 audio::-webkit-media-controls-panel {
-  -webkit-justify-content: center;
+  --webkit-justify-content: center;
   height: 25px;
 }
 
