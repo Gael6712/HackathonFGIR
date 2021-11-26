@@ -14,7 +14,6 @@ export default function PlayersEminem() {
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
-  console.log(details.name);
 
   return (
     <>
