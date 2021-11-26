@@ -60,6 +60,7 @@ function Hangman() {
 
   return (
     <>
+    <div classNameme="blur">
       <Header />
       <div className="game-container">
         <Figure wrongLetters={wrongLetters} />
@@ -78,6 +79,7 @@ function Hangman() {
       <PlayerQueen selectedWord={selectedWord} />
       <PlayerEminem selectedWord={selectedWord} />
       <PlayerTupac selectedWord={selectedWord} />
+      </div>
     </>
   );
 }
