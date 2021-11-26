@@ -59,25 +59,25 @@ function Hangman() {
 
   return (
     <>
-    <div classNameme="blur">
-      <Header />
-      <div className="game-container">
-        <Figure wrongLetters={wrongLetters} />
-        <WrongLetters wrongLetters={wrongLetters} />
-        <Word selectedWord={selectedWord} correctLetters={correctLetters} />
-      </div>
-      <Popup
-        correctLetters={correctLetters}
-        wrongLetters={wrongLetters}
-        selectedWord={selectedWord}
-        setPlayable={setPlayable}
-        playAgain={playAgain}
-      />
-      <Notification showNotification={showNotification} />
-      <PlayerOrel selectedWord={selectedWord} />
-      <PlayerQueen selectedWord={selectedWord} />
-      <PlayerEminem selectedWord={selectedWord} />
-      <PlayerTupac selectedWord={selectedWord} />
+      <div classNameme="blur">
+        <Header />
+        <div className="game-container">
+          <Figure wrongLetters={wrongLetters} />
+          <WrongLetters wrongLetters={wrongLetters} />
+          <Word selectedWord={selectedWord} correctLetters={correctLetters} />
+        </div>
+        <Popup
+          correctLetters={correctLetters}
+          wrongLetters={wrongLetters}
+          selectedWord={selectedWord}
+          setPlayable={setPlayable}
+          playAgain={playAgain}
+        />
+        <Notification showNotification={showNotification} />
+        <PlayerOrel selectedWord={selectedWord} />
+        <PlayerQueen selectedWord={selectedWord} />
+        <PlayerEminem selectedWord={selectedWord} />
+        <PlayerTupac selectedWord={selectedWord} />
       </div>
     </>
   );
