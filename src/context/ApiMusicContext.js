@@ -24,7 +24,7 @@ const MusicContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/7868651"
+        "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/414838122"
       )
       .then((res) => res.data)
       .then((dataOrel) => {
@@ -46,6 +46,20 @@ const MusicContextProvider = (props) => {
       });
   }, []);
   /**=============================================================== */
+  // Tupac API
+  const [dataTupac, setDataTupac] = useState([]);
+  useEffect(() => {
+    axios
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/12901222"
+      )
+
+      .then((res) => res.data)
+      .then((dataTupac) => {
+        setDataTupac(dataTupac);
+      });
+  }, []);
+  /**=============================================================== */
   return (
     <ApiMusicContext.Provider
       value={{
@@ -57,6 +71,9 @@ const MusicContextProvider = (props) => {
         // =====//
         dataEminem: dataEminem,
         setDataEminem: setDataEminem,
+        // =====//
+        dataTupac: dataTupac,
+        setDataTupac: setDataTupac,
       }}
     >
       {props.children}

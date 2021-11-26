@@ -6,10 +6,14 @@ import Word from "./Word";
 import Popup from "./Popup";
 import Notification from "./Notification";
 import { showNotification as show } from "../../helpers/helpers";
+import PlayerOrel from "../Players/PlayerOrel";
+import PlayerQueen from "../Players/PlayerQueen";
+import PlayerEminem from "../Players/PlayerEminem";
+import PlayerTupac from "../Players/PlayerTupac";
 
-const words = ["Queen", "Orelsan", "Eminem"];
+const words = ["queen", "orelsan", "eminem","tupac"];
 let selectedWord =
-  words[Math.floor(Math.random() * words.length)].toLowerCase();
+  words[Math.floor(Math.random() * words.length)];
 
 console.log(selectedWord.toLowerCase());
 function Hangman() {
@@ -70,6 +74,10 @@ function Hangman() {
         playAgain={playAgain}
       />
       <Notification showNotification={showNotification} />
+      <PlayerOrel selectedWord={selectedWord} />
+      <PlayerQueen selectedWord={selectedWord} />
+      <PlayerEminem selectedWord={selectedWord} />
+      <PlayerTupac selectedWord={selectedWord} />
     </>
   );
 }

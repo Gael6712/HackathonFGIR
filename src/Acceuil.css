@@ -1,0 +1,42 @@
+ul {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  padding: 0;
+}
+.container {
+  background-image: url(./image/vinyl.jpg);
+
+  background-size: cover;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul li {
+  list-style: none;
+  margin: 5em 0;
+  transition: 0.5s;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  font-size: 2.2rem;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+ul:hover li a {
+  transform: scale(1);
+  opacity: 0.2;
+  filter: blur(2px);
+}
+
+ul li a:hover {
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
