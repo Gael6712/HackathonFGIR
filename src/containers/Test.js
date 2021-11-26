@@ -53,7 +53,7 @@ export default function Test() {
           className="test"
           direction="up"
           behavior="scroll"
-          scrollamount="4"
+          scrollamount="7"
         >
           {" "}
           {dataL.lyrics}
