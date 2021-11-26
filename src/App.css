@@ -10,7 +10,7 @@ body,
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   margin: 0;
   overflow: hidden;
 }
@@ -96,6 +96,7 @@ h1 {
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  z-index: 1;
 }
 
 .popup button {
@@ -123,6 +124,7 @@ h1 {
   padding: 15px 20px;
   position: absolute;
   bottom: 150px;
+  left: 700px;
   transition: transform 5s ease-in-out;
 }
 

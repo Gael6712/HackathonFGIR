@@ -1,27 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 
 export default function PlayersQueen() {
-  let [details, setDetails] = useState({});
+  
   const { dataQueen } = useContext(ApiMusicContext);
   const playQueen = dataQueen.preview;
-
-  const [player, setPlayer] = useState(0);
-
-  const handleSetPlayer = () => {
-    setPlayer(player + 1);
-  };
-
-  console.log(player);
-
-  useEffect(() => {
-    fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/412`
-    )
-      .then((res) => res.json())
-      .then((data) => setDetails(data));
-  }, []);
-  console.log(details.name);
+  
   return (
     <>
       <figure>

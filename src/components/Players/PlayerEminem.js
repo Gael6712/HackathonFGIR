@@ -1,8 +1,8 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 
 export default function PlayersEminem() {
-  let [details, setDetails] = useState({});
+  
   const { dataEminem } = useContext(ApiMusicContext);
   const playEminem = dataEminem.preview;
   console.log(playEminem);
@@ -13,15 +13,6 @@ export default function PlayersEminem() {
   };
 
   console.log(player);
-
-  useEffect(() => {
-    fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/13`
-    )
-      .then((res) => res.json())
-      .then((data) => setDetails(data));
-  }, []);
-  console.log(details.name);
 
   return (
     <>

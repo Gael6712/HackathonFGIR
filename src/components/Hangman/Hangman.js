@@ -7,9 +7,9 @@ import Popup from "./Popup";
 import Notification from "./Notification";
 import { showNotification as show } from "../../helpers/helpers";
 
-const words = ["Queen", "Orelsan", "Eminem"];
+const words = ["queen", "orelsan", "eminem","tupac"];
 let selectedWord =
-  words[Math.floor(Math.random() * words.length)].toLowerCase();
+  words[Math.floor(Math.random() * words.length)];
 
 console.log(selectedWord.toLowerCase());
 function Hangman() {
