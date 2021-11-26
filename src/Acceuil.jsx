@@ -9,7 +9,7 @@ const Acceuil = () => (
         <Link to="/Hangman">Hang your artist</Link>
       </li>
       <li>
-        <Link to="#">Read between the lyrics</Link>
+        <Link to="/test">Read between the lyrics</Link>
       </li>
       <li>
         <Link to="#">the beat must go on</Link>

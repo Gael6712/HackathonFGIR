@@ -11,9 +11,8 @@ import PlayerQueen from "../Players/PlayerQueen";
 import PlayerEminem from "../Players/PlayerEminem";
 import PlayerTupac from "../Players/PlayerTupac";
 
-const words = ["queen", "orelsan", "eminem","tupac"];
-let selectedWord =
-  words[Math.floor(Math.random() * words.length)];
+const words = ["queen", "orelsan", "eminem", "tupac"];
+let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 console.log(selectedWord.toLowerCase());
 function Hangman() {
