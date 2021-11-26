@@ -1,13 +1,11 @@
 .test {
-  height: 200px;
-  width: 400px;
-  background-color: #ffffff;
-  font-family: Cursive;
-  font-size: 22pt;
+  background: inherit;
+  font-size: 1.5em;
+  line-height: 3.75em;
   color: #000000;
   border-width: 0;
   border-style: solid;
   border-color: #000000;
   height: 80vh;
-  width: 60%;
+  width: 70%;
 }
