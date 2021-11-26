@@ -5,6 +5,7 @@ import "./Test.css";
 export default function Test() {
   const [dataL, setDataL] = useState([]);
   const [rihInfo, setRiInfo] = useState({});
+  const [trackR, setTrackR] = useState([]);
   useEffect(() => {
     fetch(
       `https://private-anon-fee770964a-lyricsovh.apiary-proxy.com/v1/Rihanna/Umbrella`
@@ -22,6 +23,16 @@ export default function Test() {
       .then((data) => setRiInfo(data));
   }, []);
   console.log(rihInfo);
+
+  useEffect(() => {
+    fetch(
+      "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/925106"
+    )
+      .then((res) => res.json())
+      .then((data) => setTrackR(data));
+  }, []);
+  console.log(trackR.preview);
+
   return (
     <div className="containKa">
       <div className="flexInfo">
@@ -32,6 +43,9 @@ export default function Test() {
           <h1>{rihInfo.name}</h1>
           <p>{rihInfo.nb_fan} fans</p>
           <p>{rihInfo.nb_album} albums</p>
+        </div>
+        <div className="audioB">
+          <audio autoPlay controls src={trackR.preview} />
         </div>
       </div>
       <p>

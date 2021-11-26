@@ -26,3 +26,8 @@
 .span {
   font-weight: bold;
 }
+.audioB {
+  position: relative;
+  display: block;
+  left: 20%;
+}
