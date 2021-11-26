@@ -1,4 +1,4 @@
-import { useContext} from "react";
+import { useContext, useState} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 
 export default function PlayersEminem() {
@@ -17,8 +17,7 @@ export default function PlayersEminem() {
   return (
     <>
       <figure>
-        <h1>{details.name}</h1>
-        {player < 6 ? (
+        {player < 3 ? (
           <audio onPlay={handleSetPlayer} controls src={playEminem}>
             Your browser does not support the
             <code>audio</code> element.

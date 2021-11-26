@@ -1,15 +1,21 @@
-import { useContext} from "react";
+import { useContext, useState} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 export default function PlayersOrel() {
   
   const { dataOrel } = useContext(ApiMusicContext);
   const playOrel = dataOrel.preview;
+  const [player, setPlayer] = useState(0);
+
+  const handleSetPlayer = () => {
+    setPlayer(player + 1);
+  };
+
+  console.log(player);
 
   return (
     <>
       <figure>
-        <h1>{details.name}</h1>
-        {player < 6 ? (
+        {player < 3 ? (
           <audio onPlay={handleSetPlayer} controls src={playOrel}>
             Your browser does not support the
             <code>audio</code> element.
