@@ -1,15 +1,17 @@
 import { useContext} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
-export default function PlayersOrel() {
+
+export default function PlayersTupac() {
   
-  const { dataOrel } = useContext(ApiMusicContext);
-  const playOrel = dataOrel.preview;
+  const { dataTupac } = useContext(ApiMusicContext);
+  const playTupac = dataTupac.preview;
+  console.log(playTupac)
 
   return (
     <>
       <figure>
         
-        <audio controls src={playOrel}>
+        <audio controls src={playTupac}>
           Your browser does not support the
           <code>audio</code> element.
         </audio>
