@@ -1,10 +1,11 @@
 import { useContext, useState} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 
-export default function PlayersOrel(props) {
-  const {selectedWord} = props;
-  const { dataOrel } = useContext(ApiMusicContext);
-  const playOrel = dataOrel.preview;
+export default function PlayersTupac() {
+  
+  const { dataTupac } = useContext(ApiMusicContext);
+  const playTupac = dataTupac.preview;
+  console.log(playTupac)
   const [player, setPlayer] = useState(0);
 
   const handleSetPlayer = () => {
@@ -15,9 +16,9 @@ export default function PlayersOrel(props) {
 
   return (
     <>
-      <figure className={selectedWord === "orelsan" ? "" : "audio-display"}>
-        {player < 3 ? (
-          <audio onPlay={handleSetPlayer} controls src={playOrel}>
+      <figure>
+      {player < 3 ? (
+          <audio onPlay={handleSetPlayer} controls src={playTupac}>
             Your browser does not support the
             <code>audio</code> element.
           </audio>

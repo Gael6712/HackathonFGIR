@@ -10,7 +10,7 @@ import PlayerOrel from "../Players/PlayerOrel";
 import PlayerQueen from "../Players/PlayerQueen";
 import PlayerEminem from "../Players/PlayerEminem";
 
-const words = ["queen", "orelsan", "eminem"];
+const words = ["queen", "orelsan", "eminem","tupac"];
 let selectedWord =
   words[Math.floor(Math.random() * words.length)];
 
