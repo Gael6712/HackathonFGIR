@@ -1,8 +1,8 @@
 import { useContext, useState} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 
-export default function PlayersTupac() {
-  
+export default function PlayersTupac(props) {
+  const {selectedWord} = props;
   const { dataTupac } = useContext(ApiMusicContext);
   const playTupac = dataTupac.preview;
   console.log(playTupac)
@@ -16,7 +16,7 @@ export default function PlayersTupac() {
 
   return (
     <>
-      <figure>
+      <figure className={selectedWord === "tupac" ? "" : "audio-display"}>
       {player < 3 ? (
           <audio onPlay={handleSetPlayer} controls src={playTupac}>
             Your browser does not support the
