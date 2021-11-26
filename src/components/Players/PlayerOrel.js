@@ -1,7 +1,8 @@
 import { useContext, useState} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
-export default function PlayersOrel() {
-  
+
+export default function PlayersOrel(props) {
+  const {selectedWord} = props;
   const { dataOrel } = useContext(ApiMusicContext);
   const playOrel = dataOrel.preview;
   const [player, setPlayer] = useState(0);
@@ -14,7 +15,7 @@ export default function PlayersOrel() {
 
   return (
     <>
-      <figure>
+      <figure className={selectedWord === "orelsan" ? "" : "audio-display"}>
         {player < 3 ? (
           <audio onPlay={handleSetPlayer} controls src={playOrel}>
             Your browser does not support the

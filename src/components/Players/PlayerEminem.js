@@ -1,11 +1,12 @@
 import { useContext, useState} from "react";
 import { ApiMusicContext } from "../../context/ApiMusicContext";
 
-export default function PlayersEminem() {
-  
+
+export default function PlayersEminem(props) {
+  const {selectedWord} = props;
+
   const { dataEminem } = useContext(ApiMusicContext);
   const playEminem = dataEminem.preview;
-  console.log(playEminem);
   const [player, setPlayer] = useState(0);
 
   const handleSetPlayer = () => {
@@ -16,7 +17,7 @@ export default function PlayersEminem() {
 
   return (
     <>
-      <figure>
+      <figure className={selectedWord === "eminem" ? "" : "audio-display"}>
         {player < 3 ? (
           <audio onPlay={handleSetPlayer} controls src={playEminem}>
             Your browser does not support the

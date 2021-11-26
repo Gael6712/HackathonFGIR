@@ -6,6 +6,9 @@ import Word from "./Word";
 import Popup from "./Popup";
 import Notification from "./Notification";
 import { showNotification as show } from "../../helpers/helpers";
+import PlayerOrel from "../Players/PlayerOrel";
+import PlayerQueen from "../Players/PlayerQueen";
+import PlayerEminem from "../Players/PlayerEminem";
 
 const words = ["queen", "orelsan", "eminem","tupac"];
 let selectedWord =
@@ -70,6 +73,9 @@ function Hangman() {
         playAgain={playAgain}
       />
       <Notification showNotification={showNotification} />
+      <PlayerOrel selectedWord={selectedWord} />
+      <PlayerQueen selectedWord={selectedWord} />
+      <PlayerEminem selectedWord={selectedWord} />
     </>
   );
 }
