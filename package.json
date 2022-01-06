@@ -38,5 +38,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Ife , Fabrice, Rafael, Gaël",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gael6712/HackathonFGIR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gael6712/HackathonFGIR/issues"
+  },
+  "homepage": "https://github.com/Gael6712/HackathonFGIR#readme"
 }
